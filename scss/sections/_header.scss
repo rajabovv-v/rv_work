@@ -1,0 +1,165 @@
+/* HEADER - START */
+.header{
+    position: relative;
+    padding: 12px 0;
+    box-shadow: 0px 2px 4px 0px rgb(34, 60, 80, 0.2) ;
+
+    &_row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width:475px) {
+            margin-top: 20px;
+            
+        }
+    }
+ 
+    &_link{  
+        color:  #8D8C8B;
+        font-family: SF Pro Text;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        
+        &.active{
+            color: #000;
+            &:hover{
+                color:  #8D8C8B;
+            }
+        }
+        &:not(:last-child){
+            margin-right: 40px;
+        }
+        &:hover{
+            color: black;
+        }        
+        @media screen and (max-width:900px) {
+            display: none;
+            
+        }
+    }
+    &_bottom{
+        display: flex;
+        gap: 16px;
+
+        &_btn1{
+            display: inline-flex;
+            padding: 18px 36px;
+            align-items: flex-start;
+            gap: 10px;
+            border-radius: 8px;
+            background:  #FF8541;
+            border: 1px solid var(--Black-2,#FF8541 );
+            color: #FFF;
+            font-family: SF Pro Text;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            &:hover{
+                background-color: #FFF;
+                color: #FF8541;
+                
+            }
+
+            @media screen and (max-width:475px) {
+                width: 156px;
+                height: 43px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                flex-shrink: 0;
+                color: #FFF;
+                font-size: 16px;
+                font-weight: 400;
+                
+            }
+        }
+        &_btn2{
+            display: flex;
+            width: 83px;
+            height: 55px;
+            padding: 16px 11px 15px 18px;
+            justify-content: flex-end;
+            align-items: center;
+            border-radius: 8px;
+            border: 1px solid var(--Black-2, #555351);
+            background: #FFF;
+            gap: 8px;
+            flex-shrink: 0;
+            color: #555351;
+            font-family: SF Pro Text;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            &:hover{
+                background-color: #FF8541;
+                color: #FFF;
+                border-color: #FF8541;
+            }
+
+            &:hover svg path {
+                stroke: #FFF;
+            }
+
+            @media screen and (max-width:475px) {
+                display: none;
+            }
+            
+           
+        }
+    }
+    &_kursor{
+        display: none;
+        width: 43px;
+        height: 43px;
+        flex-shrink: 0;
+
+        @media screen and (max-width:900px) {
+            display: block;
+            
+        }
+
+    }
+    &_top{
+        display: none;
+
+        @media screen and (max-width:475px) {
+           
+            height: 43px;
+            flex-shrink: 0;
+            display: block;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 160px;
+        }
+        &_time{
+            color: #000;
+            font-family: SF Pro Text;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+    &_logo{
+
+        img{
+            width: 110px;
+            height: 79px;
+
+            @media screen and (max-width:475px) {
+                width: 59.787px;
+                height: 43px;
+                flex-shrink: 0;
+            }
+        }
+    }
+}
+/* HEADER - END */

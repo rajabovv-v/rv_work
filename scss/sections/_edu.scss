@@ -1,0 +1,99 @@
+/* EDU - START */
+.edu{
+
+    &_text{
+        margin-top: 30px;
+       
+
+
+        &_tit{
+            color: var(--Brown-2, #FF8541);
+            font-family: SF Pro Text;
+            font-size: 39px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        &_sub{
+            color: #000;
+            font-family: SF Pro Text;
+            font-size: 39px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+    &_content{
+        width:100%;
+        display: flex;
+        border-radius: 26px;
+        background: #F9F8F6;
+        padding: 48px 48px;
+        margin-top: 30px;
+        overflow-x: scroll;
+        
+
+        &_text{
+            display: flex;
+            flex-direction: column;
+            padding: 48px 48px;
+            gap:44px;
+       
+           
+            
+            
+
+            &_tit{
+                color: var(--Brown-2, #FF8541);
+                font-family: SF Pro Text;
+                font-size: 31px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            &_sub{
+                color: var(--Black-2, #555351);
+                font-family: SF Pro Text;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height:160% ;
+            }
+
+            &_btn{
+                width: 132px;
+                height: 55px;
+                display: inline-flex;
+                padding: 18px 36px;
+                align-items: flex-start;
+                gap: 10px;
+                border-radius: 8px;
+                border: 1px solid  #555351;
+                background: #FFF;
+                color:  #555351;
+                font-family: SF Pro Text;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                &:hover{
+                    background-color: #FF8541;
+                    border-color: #FF8541;
+                    color: #FFF;
+                }
+            }
+        }
+
+        &_img{
+            width: 544px;
+            height: 405px;
+            flex-shrink: 0;
+            padding: 24px 12px;
+          
+          
+        }
+    }
+}
+/* EDU - END */

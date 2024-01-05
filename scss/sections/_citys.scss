@@ -1,0 +1,159 @@
+/* CITYS - START */
+
+.city{
+
+
+    &_text{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width:600px) {
+           display: flex;
+           justify-content: space-evenly;
+           
+        
+        }
+
+
+        
+        &_tit1{
+            color: #000;
+            font-family: SF Pro Text;
+            font-size: 39px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            @media screen and (max-width:600px) {
+                color: #000;
+                font-size: 25px;
+            
+            }
+        }
+        &_tit{
+            color: var(--Brown-2, #FF8541);
+            font-family: SF Pro Text;
+            font-size: 39px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            @media screen and (max-width:600px) {
+                color: #000;
+                font-size: 25px;
+            
+            }
+        }
+        &_btn{
+            display: inline-flex;
+            padding: 18px 36px;
+            align-items: flex-start;
+            gap: 10px;
+            border-radius: 8px;
+            border: 1px solid  #555351;
+            background: #FFF;
+            color: var(--Black-1, #1C1917);
+            font-family: SF Pro Text;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+            @media screen and (max-width:600px) {
+                color: #000;
+                font-size: 12px;
+                padding: 9px 18px;
+                font-weight: 600;
+            
+            }
+
+            &:hover{
+                background-color: #FF8541;
+                color: #FFF;
+                border: 1px solid ;
+            }
+        }
+
+    }
+    &_famous{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 50px;
+
+        @media screen and (max-width:724px) {
+            overflow-x:scroll;
+            flex-wrap: nowrap;
+            
+        }
+
+        img{
+            width: 100%;      
+            vertical-align: bottom;
+        }
+       
+
+        &_one{
+            
+            position: relative;
+            overflow: hidden;
+            flex: 1 1 auto;
+
+            @media screen and (max-width:724px) {
+                flex: 0 0 auto;
+                
+            }
+
+          
+
+            &_text{
+                position: absolute;
+                bottom: 57px;
+                left: 24px;
+
+                &_sub{
+                    color: #FFF;
+                    font-family: SF Pro Text;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+            &_locat{
+                display: flex;
+                align-items: center;
+                text-align: center;
+                position: absolute;
+               
+                bottom: 20px;
+                left: 24px;
+
+                &_span{
+                    color: #FFF;
+                    font-family: SF Pro Text;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                }
+
+                &_p{
+                    position: absolute;   
+                    bottom: 20px;
+                    left: 203px;
+    
+                }
+            }
+        }
+       
+    
+     }
+
+}
+
+
+
+
+/* CITYS - END */
